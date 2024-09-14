@@ -1,0 +1,117 @@
+/* #resume-form{
+    display:none;
+} */
+
+body{
+    margin:40px 0px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#profile{
+    width:100px;
+    object-fit:contain
+}
+.background{
+    background-color: rgb(18, 169, 189);
+    border-radius: 10px;
+    color:white;
+    animation: title-move 2s 0.5s linear infinite;
+}
+@keyframes title-move{
+    0%{
+        background-color: rgb(18, 169, 189);
+    }
+    50%{
+        background-color: #307fe6;
+        /* box-shadow: 0px 1px 1px rgb(18, 169, 189); */
+    }
+    100%{
+        background-color: rgb(18, 169, 189);
+    }
+}
+
+#template-left{
+    width:30%;
+    background-color:  rgb(18, 169, 189);
+}
+/* #resume-template{
+    /* display: flex; */
+.card{
+    margin-top: 30px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #ebebeb;
+    width:700px;
+}
+.card .card-header{
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:700px;
+}
+.card .card-header #hide-obj, .card .card-header #hide-exp, .card .card-header #hide-edu, .card .card-header #hide-cer, .card .card-header #hide-skills{
+    /* height:25px;
+    width:45px; */
+    padding: 2px 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.card #objectiveFieldT {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+#output-image{
+    height:200px;
+    width:200px;
+    max-width: 200px; 
+    border-radius: 100px; 
+    margin-top: 60px; 
+    margin-bottom: 20px;
+}
+h5{
+    margin-top: 40px;
+}
+#resume-template .btn{
+    background-color: #ffffff;
+    color:black;
+}
+#resume-template .btn:hover{
+    background-color: #ffef16;
+}
+#left-data{
+    margin-top: -15px;
+}
+h4{
+    opacity: 0%;
+    animation: heading-move 1s 0.3s linear forwards;
+}
+@keyframes heading-move{
+    from{
+        margin-left: -20px;
+        opacity:0%;
+    }
+    to{
+        margin-left: 15px;
+        opacity:100%;
+    }
+}
+img{
+    opacity:0%;
+    animation: profile-move 1.3s 1.5s linear forwards;
+}
+@keyframes profile-move{
+    from{
+        opacity:0%;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 100%;
+        transform: scale(1);
+        /* rotate: 360deg; */
+    }
+}
